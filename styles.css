@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #adb7c7;
+}
+
+a {
+  all: unset;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #151a24;
+  color: #cacaca;
+  border-radius: 12px;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  margin: 10px;
+  font-size: 16px;
+}
+
+nav .selected {
+  background-color: #17233a;
+  color: #5e9cf7;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+a i {
+  margin-right: 5px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.right img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+i:hover,
+a:hover {
+  color: #5e9cf7;
+  cursor: pointer;
+}
+
+.mobile-item {
+  display: inherit;
+}
+.desktop-item {
+  display: none;
+}
+
+#mobile-menu {
+  margin-top: 5px;
+  width: 180px;
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: end;
+  right: 10px;
+  transition: all 200ms ease-in;
+}
+
+#mobile-menu.hidden {
+  opacity: 0;
+  right: -200px;
+}
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+  .mobile-item {
+    display: none;
+  }
+  .desktop-item {
+    display: inherit;
+  }
+  nav {
+    padding: 0px 24px;
+  }
+  #mobile-menu {
+    display: none;
+  }
+}

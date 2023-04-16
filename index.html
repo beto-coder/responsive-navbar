@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navbar Responsivo</title>
+    <script
+      src="https://kit.fontawesome.com/ab0dcbde02.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left"></div>
+      <div class="middle desktop-item">
+        <a href="#"><i class="fa fa-house"></i>Dashboard</a>
+        <a href="#" class="selected">
+          <i class="fa fa-chart-pie"></i>Analítico
+        </a>
+        <a href="#"><i class="fa fa-cube"></i>Produtos</a>
+        <a href="#"><i class="fa fa-gear"></i>Configurações</a>
+      </div>
+      <div class="right">
+        <i
+          class="fa-solid fa-bars mobile-item"
+          onclick="handleMobileMenuToggle()"
+        ></i>
+        <i class="fa-regular fa-moon"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-regular fa-comments"></i>
+        <img src="beto.jpg" />
+      </div>
+    </nav>
+    <nav id="mobile-menu" class="hidden">
+      <a href="#"><i class="fa fa-house"></i>Dashboard</a>
+      <a href="#"> <i class="fa fa-chart-pie"></i>Analítico </a>
+      <a href="#"><i class="fa fa-cube"></i>Produtos</a>
+      <a href="#"><i class="fa fa-gear"></i>Configurações</a>
+    </nav>
+  </body>
+</html>
